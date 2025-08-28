@@ -31,11 +31,11 @@
             <div class="hidden sm:flex gap-[20px]">
                 
                 <div class="cursor-pointer font-semibold bg-[#41ff6b1a] w-[123px] h-[52px]  flex items-center justify-center gap-[10px] rounded-4xl">
-                    <p>0</p>
+                    <p id="increaseHeart">0</p>
                     <img src="./assets/heart.png" class="max-h-[20px]" alt="">
                 </div>
                 <div class="cursor-pointer font-semibold bg-[#41ff6b1a] w-[106px] h-[52px]  flex items-center justify-center gap-[10px]  rounded-4xl">
-                    <p>100</p>
+                    <p >100</p>
                     <img src="./assets/coin.png " class="max-h-[20px]" alt="">
                 </div>
                 <div class="cursor-pointer font-semibold bg-[#00A63E] text-white  w-[127px] h-[52px] flex items-center justify-center rounded-4xl px-[34px] ">
@@ -59,15 +59,15 @@
 <section class="bg-[#F5FFF6] pt-[48px] p-[10px] grid gap-[10px] justify-center lg:justify-between xl:justify-between grid-cols-1  md:grid-cols-2  xl:grid-cols-[3fr_1fr] 2xl:grid-cols-[3fr_1fr]">
         <!--content-->
         <!--Cards-->
-        <div class="grid  gap-[5px] place-items-center  grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  ">
+        <div class="grid  gap-[10px] place-items-center  grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  ">
 
 
-           <div class="p-[20px] bg-[#FFFFFF] shadow-md shadow-gray-300 rounded-xl w-full h-full" >
+           <div class="p-[20px] gap-[10px] bg-[#FFFFFF] shadow-md shadow-gray-300 rounded-xl w-full h-full" >
                     <div class="flex justify-between ">
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/emergency.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">National Emergency</h3>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()" ><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -88,7 +88,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/police.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Police Helpline Number</h3>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -110,7 +110,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/fire-service.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Fire Service Number</h3>
@@ -121,7 +121,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -131,7 +131,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/ambulance.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Ambulance Service</h3>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -152,7 +152,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/emergency.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Women & Child Helpline</h3>
@@ -163,7 +163,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -174,7 +174,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/emergency.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Anti-Corruption Helpline</h3>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -196,7 +196,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/emergency.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Electricity Helpline</h3>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -217,7 +217,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/emergency.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Brac Helpline</h3>
@@ -228,7 +228,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
@@ -238,7 +238,7 @@
                             <div class="mb-[15px] w-[40px] h-[40px] bg-[#FFE3E2] rounded-[7px] flex items-center justify-center">
                            <img src="./assets/emergency.png" class="w-[20px] h-[20px]" alt="">
                     </div>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <i class="fa-regular fa-heart cursor-pointer" onclick="increaseHeart()"></i>
                     </div>
                     
                     <h3 class="font-semibold mb-[2px] text-[1.5rem]">Bangladesh Railway Helpline</h3>
@@ -249,7 +249,7 @@
                     </div>
                     <div class="flex gap-[10px]">
                         <button class="text-[#5C5C5C] rounded-[10px] border-gray-300 btn btn-outline hover:bg-gray-900 hover:text-white flex-1  "><i class="fa-solid fa-copy"></i> Copy</button>
-                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  "><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="rounded-[10px] btn bg-[#00a63e] hover:bg-green-400 text-white  flex-1  " onclick="call()"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
         </div>
 
