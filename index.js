@@ -34,11 +34,11 @@ function clearHistory() {
     document.getElementById("history-add").innerHTML="";
 }
 
-function copyText() {
+function copyText(num) {
    let copied= document.getElementById("hotLineNumber").innerText;
    let times=parseInt(document.getElementById("timesCopied").innerText);
-   navigator.clipboard.writeText(copied).then(function(){
-    alert("Copied: "+copied);
+   navigator.clipboard.writeText(num).then(function(){
+    alert("Copied: "+num);
     times++;
     document.getElementById("timesCopied").innerText=times;
    }).catch(err,function(){
