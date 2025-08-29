@@ -2,24 +2,22 @@
 Ans:
 1.
 getElementById()-> we use this when we want to get only one element from html since id's are generally unique
-returns the specified object
+returns the specified object.
 
-getElementByClassName()->we use this when we want to get a group of elements, since classes are generally shared by multiple elements,returns htmlcollection
+getElementByClassName()->we use this when we want to get a group of elements, since classes are generally shared by multiple elements,returns htmlcollection.
 
-document.querySelector()->gets the first element that matches a css selector,it can used by id,claa,attribute and nesting,returns the specified object
+document.querySelector()->gets the first element that matches a css selector,it can used by id,class,attribute and nesting,returns the specified object.
 
-document.querySelectorAll()->gets all the element that matches a css selector,it can used by id,claa,attribute and nesting, returns nodelist
+document.querySelectorAll()->gets all the element that matches a css selector,it can used by id,class,attribute and nesting, returns nodelist.
 
 
 2.
-<body>
 
-<div id="container">
-<p>Dummy</p>
-</div>
 <script>
 const pp=document.createElement("p");
+
 pp.textContent="Dummy2";
+
 document.getElementById("container").appendChild(pp);
 
 </script>
@@ -41,4 +39,6 @@ its useful because it works even for the elements added after the page loads, an
 5.
 
 ->preventDefault() prevents default action of an element from happening
+
+
 ->stopPropagation() stops the event from bubbling in the dom
