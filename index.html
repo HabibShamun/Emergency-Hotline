@@ -14,7 +14,7 @@
 </head>
 <body style="font-family: 'Hind Madurai', sans-serif;">
     <!--nav bar-->
-    <nav class="sticky top-0 z-100 bg-white lg:max-w-[1920px] mx-auto p-6" >
+    <nav class="sticky top-0 z-100 bg-white lg:max-w-[1920px] mx-auto p-6 relative" >
         
         <div class="flex justify-between max-h-[30px] items-center">
             <!--nav bar left-->
@@ -25,16 +25,16 @@
             </div>
         </div>
         <!--nav bar right-->
-        <div class="sm:hidden ">
+        <div class="sm:hidden " id="hamburger" onclick="hamburger()">
             <i class="text-[30px] fa-solid fa-bars cursor-pointer"></i>
         </div>
-            <div class="hidden sm:flex gap-[20px]">
+            <div class="hidden sm:flex gap-[20px]" id="right-nav">
                 
                 <div class="cursor-pointer font-black bg-[#41ff6b1a] w-[123px] h-[52px]  flex items-center justify-center gap-[10px] rounded-4xl">
                     <p id="increaseHeart">0</p>
                     <img src="./assets/heart.png" class="max-h-[20px]" alt="">
                 </div>
-                <div class="cursor-pointer font-black bg-[#41ff6b1a] w-[106px] h-[52px]  flex items-center justify-center gap-[10px]  rounded-4xl">
+                <div class="cursor-pointer font-black bg-[#41ff6b1a] w-[127px] h-[52px]  flex items-center justify-center gap-[10px]  rounded-4xl">
                     <p id="coins">100</p>
                     <img src="./assets/coin.png " class="max-h-[20px]" alt="">
                 </div>

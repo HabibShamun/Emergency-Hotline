@@ -45,3 +45,30 @@ function copyText(num) {
     console.error("Failed to copy",err);
    })
 }
+
+function hamburger() {
+    const nav=document.getElementById("right-nav");
+    if(window.innerWidth<640) {
+       if(nav.classList.contains("hidden")) {
+        nav.classList.remove("hidden");
+        nav.classList.add("flex","flex-col","absolute","top-16","right-0","w-full","shadow-md","p-4","bg-white");
+       } else {
+        nav.classList.add("hidden");
+        nav.classList.remove("flex","flex-col","absolute","top-16","right-0","w-full","shadow-md","p-4","bg-white");
+       }
+    }
+}
+window.addEventListener("resize",function(){
+    const nav=document.getElementById("right-nav");
+    if(window.innerWidth>=640) {
+       nav.classList.add("flex");
+        nav.classList.remove("flex","flex-col","absolute","top-16","right-0","w-full","shadow-md","p-4","bg-white");
+       
+    }
+     
+    if(window.innerWidth<640) {
+       nav.classList.remove("flex");
+        nav.classList.add("flex","flex-col","absolute","top-16","right-0","w-full","shadow-md","p-4","bg-white");
+       
+    }
+})
