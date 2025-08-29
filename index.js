@@ -19,7 +19,7 @@ function call(text,num) {
         <p class="font-semibold">${text}</p>
         <p class="font-regular">${num}</p>
         </div>
-        <p class="font-regular">${time};
+        <p class="font-regular">${time}
         </p>
     </div>
 `;
